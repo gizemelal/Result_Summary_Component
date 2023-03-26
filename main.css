@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+* {
+  margin: 0; }
+
+html,
+body {
+  height: 100%; }
+
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased; }
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%; }
+
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word; }
+
+h1,
+h2,
+h3 {
+  line-height: 1; }
+
+body {
+  min-height: 100vh;
+  font-family: "Hanken Grotesk", sans-serif;
+  display: grid;
+  place-content: center; }
+  body menu {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
+    border-radius: 3rem;
+    padding: 0;
+    display: grid;
+    max-width: 600px; }
+    body menu .card_result {
+      display: grid;
+      padding: 2rem 2rem;
+      border-radius: 2rem;
+      text-align: center;
+      gap: 1rem;
+      background: linear-gradient(to bottom, #7857ff, #2e2be9);
+      color: white; }
+      body menu .card_result h2 {
+        font-size: 1rem;
+        color: #c8c7ff; }
+      body menu .card_result .circle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom, #4e21ca, rgba(36, 33, 202, 0));
+        width: 150px;
+        height: 150px;
+        border-radius: 50%; }
+        body menu .card_result .circle h1 {
+          font-size: 3rem;
+          font-weight: 800; }
+      body menu .card_result b {
+        font-size: 1.8rem; }
+      body menu .card_result .result_info {
+        color: #c8c7ff;
+        font-size: .9rem;
+        width: 200px;
+        line-height: 1.3rem; }
+    body menu .card_summary {
+      padding: 2rem;
+      display: grid;
+      gap: 1rem; }
+      body menu .card_summary .summary_title {
+        color: black;
+        font-weight: 800;
+        margin-bottom: 1rem; }
+      body menu .card_summary .rows {
+        display: grid;
+        gap: 1rem; }
+        body menu .card_summary .rows .row {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          border-radius: 10px;
+          padding: .5rem .5rem; }
+          body menu .card_summary .rows .row .svg {
+            display: flex;
+            padding: 0 0.5rem; }
+          body menu .card_summary .rows .row:nth-child(1) {
+            background-color: rgba(255, 87, 87, 0.1); }
+            body menu .card_summary .rows .row:nth-child(1) b {
+              margin-left: 0.3rem;
+              color: #ff5757; }
+            body menu .card_summary .rows .row:nth-child(1) p {
+              color: gray; }
+            body menu .card_summary .rows .row:nth-child(1) p b {
+              color: #000; }
+          body menu .card_summary .rows .row:nth-child(2) {
+            background-color: rgba(255, 176, 31, 0.1); }
+            body menu .card_summary .rows .row:nth-child(2) b {
+              color: #ffb01f;
+              margin-left: 0.3rem; }
+            body menu .card_summary .rows .row:nth-child(2) p {
+              color: gray; }
+            body menu .card_summary .rows .row:nth-child(2) p b {
+              color: #000; }
+          body menu .card_summary .rows .row:nth-child(3) {
+            background-color: rgba(0, 189, 145, 0.1); }
+            body menu .card_summary .rows .row:nth-child(3) b {
+              color: #00bd91;
+              margin-left: 0.3rem; }
+            body menu .card_summary .rows .row:nth-child(3) p {
+              color: gray; }
+            body menu .card_summary .rows .row:nth-child(3) p b {
+              color: #000; }
+          body menu .card_summary .rows .row:nth-child(4) {
+            background-color: rgba(46, 43, 233, 0.1);
+            margin-bottom: 1rem; }
+            body menu .card_summary .rows .row:nth-child(4) b {
+              color: #2e2be9;
+              margin-left: 0.3rem; }
+            body menu .card_summary .rows .row:nth-child(4) p {
+              color: gray; }
+            body menu .card_summary .rows .row:nth-child(4) p b {
+              color: #000; }
+        body menu .card_summary .rows .btn {
+          margin-top: auto;
+          padding: .8rem 1rem;
+          border-radius: 3rem;
+          border: none;
+          background: #303b5a;
+          color: #fff;
+          cursor: pointer; }
+          body menu .card_summary .rows .btn:hover {
+            background: linear-gradient(to bottom, #7857ff, #2e2be9); }
+
+@media (min-width: 600px) {
+  menu {
+    grid-template-columns: 1fr 1fr; } }

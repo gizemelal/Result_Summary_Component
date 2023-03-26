@@ -65,6 +65,7 @@ body {
         font-size: 1rem;
         color: #c8c7ff; }
       body menu .card_result .circle {
+        margin-left: 1.5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;

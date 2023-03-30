@@ -44,7 +44,9 @@ h3 {
 
 body {
   min-height: 100vh;
-  font-family: "Hanken Grotesk", sans-serif; }
+  font-family: "Hanken Grotesk", sans-serif;
+  display: grid;
+  place-content: center; }
   body .card_container {
     display: flex; }
     body .card_container menu {
@@ -63,7 +65,7 @@ body {
         gap: 1rem;
         background: linear-gradient(to bottom, #7857ff, #2e2be9);
         color: white; }
-        body .card_container menu .card_result h2 {
+        body .card_container menu .card_result h1 {
           font-size: 1rem;
           color: #c8c7ff; }
         body .card_container menu .card_result .circle {
@@ -168,3 +170,4 @@ body {
       justify-content: center; }
     body menu .card_container menu .card_summary {
       width: 100%; } }
+
